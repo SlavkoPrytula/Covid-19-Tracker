@@ -3,6 +3,9 @@ import json
 import re
 import requests
 import pprint
+import matplotlib.pyplot as plt
+import math
+import numpy as np
 
 
 def extract_list(data):
@@ -52,6 +55,57 @@ def write_country_data(country_d):
         json.dump(country_d, outfile, ensure_ascii=False, indent=4)
 
 
+def extract_var(json_file):
+    """
+    Get all the needed data from every line of the json file
+    Gets time as base and users choice (number of people curred,
+    number of deaths, number of new cases of COVID-19)
+    """
+    time_data = []
+    total_cases_data = []
+    for data_line in json_file:
+        case_data = data_line.pop("total_cases")
+        # round the numbers for better appearance (!!!!!note: causes slight defection in numbers):
+        # total_cases_data.append(math.ceil(int(case_data.replace(",", "")) /
+        #                                   10 ** (len(case_data) - 4)) *
+        #                         10 ** (len(case_data) - 4))
+
+        total_cases_data.append(int(case_data.replace(",", "")))
+        # get only the month:
+        time_data.append(data_line.pop("record_date")[:10])
+    return time_data, total_cases_data
+
+
+def plot_var(plot_data):
+    """
+    Draws the graph by putting points on it that
+    correspond to date and value
+    The growth is ought to be exponential
+    """
+    fig = plt.gcf()
+    fig.set_size_inches(15.5, 7.5)
+
+    x = plot_data[0]
+    y = plot_data[1]
+    # plot (dotted graph):
+    plt.plot(x, y, "o")
+
+    ax = plt.axes()
+    # ax.xaxis.set_major_formatter(plt.NullFormatter())
+
+    # set labels:
+    ax.set_xlabel("Dates")
+    ax.set_ylabel("Cases")
+
+    # change ticks:
+    plt.yticks(np.arange(min(y), max(y) + 1, 15000.0))
+
+    plt.gcf().autofmt_xdate()
+
+    # show:
+    plt.show()
+
+
 if __name__ == '__main__':
     # get countries:
     country_data = countries.get_countries()
@@ -63,10 +117,9 @@ if __name__ == '__main__':
 
     # get data about the country:
     country_data = data(countries_exc[0])
-    # country_dict = read_json(country_data)
-    # print(country_dict)
 
     print(country_data)
     print(country_data["country"])
 
-    write_country_data(country_data)
+    cases_data = extract_var(country_data["stat_by_country"])
+    plot_var(cases_data)
