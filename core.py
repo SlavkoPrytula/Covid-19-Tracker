@@ -39,8 +39,17 @@ def read_json(file):
     This function reads an existing .json file and returns it as a dictionary.
     """
     with open(file) as f:
-        data = json.load(f)
-    return data
+        c_data = json.load(f)
+    return c_data
+
+
+def write_country_data(country_d):
+    """
+    Writes the new converted dictionary to a .json file.
+    """
+    country = country_d["country"]
+    with open("{}_virus.json".format(country), "w", encoding='utf-8') as outfile:
+        json.dump(country_d, outfile, ensure_ascii=False, indent=4)
 
 
 if __name__ == '__main__':
@@ -54,4 +63,10 @@ if __name__ == '__main__':
 
     # get data about the country:
     country_data = data(countries_exc[0])
-    pprint.pprint(country_data)
+    # country_dict = read_json(country_data)
+    # print(country_dict)
+
+    print(country_data)
+    print(country_data["country"])
+
+    write_country_data(country_data)
