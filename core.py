@@ -10,6 +10,30 @@ import math
 import numpy as np
 
 
+def virus_interface(countries):
+    """
+    Print out all the available countries to chose which
+    one to show the data of.
+    Main interface of the program
+    """
+    number_of_cols = 4
+    number_of_rows = 0
+
+    print(" " * 41 + "Effected countires" + " " * 41)
+    print()
+    if len(countries) % number_of_cols != 0:
+        number_of_rows = (len(countries) + number_of_cols) // number_of_cols
+    for item in range(number_of_rows):
+        line = ""
+        for country in range(item, len(countries), number_of_rows):
+            line += str(country + 1) + ". " + countries[country] \
+                    + " " * (25 - len(countries[country]) - len(str(country + 1)))
+        print(line)
+
+    user_country_choice = input("Enter a number of a country: ")
+    return user_country_choice
+
+
 def extract_list(data):
     """
     Extract all country names properly.
@@ -50,7 +74,9 @@ def read_json(file):
 
 def write_country_data(country_d):
     """
-    Writes the new converted dictionary to a .json file.
+    Writes the new converted dictionary to a .json file
+    with a name "country_virus.json"
+    country = country's name
     """
     country = country_d["country"]
     with open("{}_virus.json".format(country), "w", encoding='utf-8') as outfile:
@@ -101,10 +127,10 @@ def plot_var(plot_data):
     y_mean = plot_data[2]
     x_av = sorted(list(set(plot_data[0])))
 
-    # ??? (which is more accurate: the mean value or the middle value in teh list)
-
-    # y_av = [sum(y_mean[date]) // len(y_mean[date]) for date in y_mean]
-    y_av = [y_mean[date][len(y_mean[date]) // 2] for date in y_mean]
+    # ??? (which is more accurate: the mean value or the middle value in teh list or last number)
+    # y_av = [y_mean[date][-1] for date in y_mean]
+    y_av = [sum(y_mean[date]) // len(y_mean[date]) for date in y_mean]
+    # y_av = [y_mean[date][len(y_mean[date]) // 2] for date in y_mean]
 
     # plot (dotted graph):
     plt.plot(x_av, y_av)
@@ -131,17 +157,16 @@ if __name__ == '__main__':
     # get countries:
     country_data = countries.get_countries()
     countries_list = re.compile("\{.*?(?=\[)").split(country_data)[1]
-    print(countries_list)
-    print(type(countries_list))
+
     # extract:
-    countries_exc = extract_list(countries_list)
+    countries_ext = extract_list(countries_list)
+    countries_ext = sorted(countries_ext, key=lambda x: x[0])
 
-    # get data about the country:
-    country_data = data(countries_exc[0])
-    print(country_data["stat_by_country"][-1])
-
-    print(country_data)
+    # interface / get data about the country:
+    country_data = data(countries_ext[int(virus_interface(countries_ext)) - 1])
+    print()
     print(country_data["country"])
+    print("Getting data...")
 
     cases_data = extract_var(country_data["stat_by_country"])
     plot_var(cases_data)
