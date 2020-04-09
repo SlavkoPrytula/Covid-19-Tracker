@@ -16,6 +16,7 @@ def virus_interface(countries):
     one to show the data of.
     Main interface of the program
     """
+
     number_of_cols = 4
     number_of_rows = 0
 
@@ -38,6 +39,7 @@ def extract_list(data):
     """
     Extract all country names properly.
     """
+
     result = []
     s = re.findall('(?<=,"|\[").*?(?=\",|\"])', data)
     for item in s:
@@ -51,6 +53,7 @@ def data(country):
     in a country.
     New data roughly every 10 minutes
     """
+
     url = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_particular_country.php"
 
     querystring = {"country": country}
@@ -67,6 +70,7 @@ def read_json(file):
     """
     This function reads an existing .json file and returns it as a dictionary.
     """
+
     with open(file) as f:
         c_data = json.load(f)
     return c_data
@@ -78,6 +82,7 @@ def write_country_data(country_d):
     with a name "country_virus.json"
     country = country's name
     """
+
     country = country_d["country"]
     with open("{}_virus.json".format(country), "w", encoding='utf-8') as outfile:
         json.dump(country_d, outfile, ensure_ascii=False, indent=4)
@@ -89,6 +94,7 @@ def extract_var(json_file):
     Gets time as base and users choice (number of people curred,
     number of deaths, number of new cases of COVID-19)
     """
+
     cases_mean = {}
     time_data = []
     total_cases_data = []
@@ -119,6 +125,7 @@ def plot_var(plot_data):
     correspond to date and value
     The growth is ought to be exponential
     """
+
     fig = plt.gcf()
     fig.set_size_inches(10.5, 7.5)
 
@@ -128,13 +135,15 @@ def plot_var(plot_data):
     x_av = sorted(list(set(plot_data[0])))
 
     # ??? (which is more accurate: the mean value or the middle value in teh list or last number)
-    # y_av = [y_mean[date][-1] for date in y_mean]
-    y_av = [sum(y_mean[date]) // len(y_mean[date]) for date in y_mean]
+    y_av = [y_mean[date][-1] for date in y_mean]
+    y_down_av = [y_mean[date][1] for date in y_mean]
+    # y_av = [sum(y_mean[date]) // len(y_mean[date]) for date in y_mean]
     # y_av = [y_mean[date][len(y_mean[date]) // 2] for date in y_mean]
 
     # plot (dotted graph):
     plt.plot(x_av, y_av)
     plt.plot(x, y, "o")
+    plt.plot(x_av, y_down_av)
 
     ax = plt.axes()
     # ax.xaxis.set_major_formatter(plt.NullFormatter())
@@ -159,11 +168,13 @@ if __name__ == '__main__':
     countries_list = re.compile("\{.*?(?=\[)").split(country_data)[1]
 
     # extract:
-    countries_ext = extract_list(countries_list)
+    countries_ext = extract_list(countries_list)[1:]
     countries_ext = sorted(countries_ext, key=lambda x: x[0])
 
     # interface / get data about the country:
     country_data = data(countries_ext[int(virus_interface(countries_ext)) - 1])
+
+    # print(country_data)
     print()
     print(country_data["country"])
     print("Getting data...")
