@@ -30,6 +30,7 @@ def virus_interface(countries):
             line += str(country + 1) + ". " + countries[country] \
                     + " " * (25 - len(countries[country]) - len(str(country + 1)))
         print(line)
+    print(countries)
 
     user_country_choice = input("Enter a number of a country: ")
     return user_country_choice
@@ -174,7 +175,7 @@ if __name__ == '__main__':
     # interface / get data about the country:
     country_data = data(countries_ext[int(virus_interface(countries_ext)) - 1])
 
-    # print(country_data)
+    print(country_data)
     print()
     print(country_data["country"])
     print("Getting data...")
