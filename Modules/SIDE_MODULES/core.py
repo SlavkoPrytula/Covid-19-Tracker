@@ -1,12 +1,8 @@
-from matplotlib.testing.jpl_units import deg
-
-import get_infected_countries as countries
+import Modules.SIDE_MODULES.get_infected_countries as countries
 import json
 import re
 import requests
-import pprint
 import matplotlib.pyplot as plt
-import math
 import numpy as np
 
 
@@ -20,7 +16,7 @@ def virus_interface(countries):
     number_of_cols = 4
     number_of_rows = 0
 
-    print(" " * 41 + "Effected countires" + " " * 41)
+    print(" " * 41 + "Affected countries" + " " * 41)
     print()
     if len(countries) % number_of_cols != 0:
         number_of_rows = (len(countries) + number_of_cols) // number_of_cols
@@ -30,10 +26,10 @@ def virus_interface(countries):
             line += str(country + 1) + ". " + countries[country] \
                     + " " * (25 - len(countries[country]) - len(str(country + 1)))
         print(line)
-    print(countries)
+    # print(countries)
 
-    user_country_choice = input("Enter a number of a country: ")
-    return user_country_choice
+    # user_country_choice = input("Enter a number of a country: ")
+    # return user_country_choice
 
 
 def extract_list(data):
