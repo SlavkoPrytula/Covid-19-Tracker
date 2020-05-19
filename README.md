@@ -31,10 +31,10 @@ To run the program after cloning in on your machine, go to the _MAIN_ folder and
 
 After, click _RUN_, and the program will start.
 
-Noy you sould have the program interface on your screen.
+Now you sould have the program interface on your screen.
 ![Screen](https://github.com/SlavkoPrytula/Covid-19-Tracker/blob/master/Photos/Screenshot_20200519_152933.png)
 
-Now you can chose what statistics you want to see. The program provides you with statistical data of SARS COVID-19 and Flu viruses. (Cases, Recovers, Daeths, and much more)
+Now you can chose what statistics you want to see _by typing in the command number in tnto the imput line_. The program provides you with statistical data of SARS COVID-19 and Flu viruses. (Cases, Recovers, Daeths, and much more)
 
 ![Example_1](https://github.com/SlavkoPrytula/Covid-19-Tracker/blob/master/Photos/Screenshot_20200519_153037.png)
 
