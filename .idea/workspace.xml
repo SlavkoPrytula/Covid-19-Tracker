@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc5b03e8-7c2b-449c-bf82-7389de5968a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Photos/Cases_with_prediction.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photos/Cases_without_prediction.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photos/Deaths_with_prediction.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photos/Deaths_without_prediction.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photos/Recovered_with_prediction.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photos/Recovered_without_prediction.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/ADT/COVID_ADT/test_CoronaADT.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ADT/COVID_ADT/test_CoronaADT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/Deaths_with_prediction.png" beforeDir="false" afterPath="$PROJECT_DIR$/Photos/Deaths_with_prediction.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/Deaths_without_prediction.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589888785619</updated>
-      <workItem from="1589888787525" duration="5590000" />
+      <workItem from="1589888787525" duration="7791000" />
     </task>
     <task id="LOCAL-00001" summary="PEP8 updated">
       <created>1589892769437</created>
@@ -123,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589892769437</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added photos">
+      <created>1589894915586</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589894915586</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +134,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="PEP8 updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="PEP8 updated" />
+    <MESSAGE value="added photos" />
+    <option name="LAST_COMMIT_MESSAGE" value="added photos" />
   </component>
   <component name="WindowStateProjectService">
     <state x="341" y="225" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1589889990330">
@@ -142,10 +146,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="505" y="396" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589890170251" />
-    <state x="145" y="103" key="CommitChangelistDialog2" timestamp="1589892768830">
+    <state x="145" y="103" key="CommitChangelistDialog2" timestamp="1589894915118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="145" y="103" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589892768830" />
+    <state x="145" y="103" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589894915118" />
     <state x="341" y="275" key="FileChooserDialogImpl" timestamp="1589889983141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -170,10 +174,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589890171139" />
-    <state x="132" y="256" key="Vcs.Push.Dialog.v2" timestamp="1589892788076">
+    <state x="132" y="256" key="Vcs.Push.Dialog.v2" timestamp="1589895313011">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="132" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589892788076" />
+    <state x="132" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589895313011" />
     <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1589889752822">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
