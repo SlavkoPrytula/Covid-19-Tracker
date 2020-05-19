@@ -84,4 +84,4 @@ It is available in the repository for view and read - see the [LICENSE.md](https
 
 ## Acknowledgments
 
-* _Special thanks to Ukrainian Catholic University for giving the opportunity to make the project become a reality. For all the provided help and tips_
+* _Special thanks to [Ukrainian Catholic University](https://apps.ucu.edu.ua/en/) for giving the opportunity to make the project become a reality. For all the provided help and tips_
