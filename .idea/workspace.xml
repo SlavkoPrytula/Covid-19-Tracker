@@ -1,19 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectId" id="1ZuDfZzdlRJ48rAcgD4BlsFQhDT" />
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="ChangeListManager">
+    <list default="true" id="cc5b03e8-7c2b-449c-bf82-7389de5968a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Term_Work.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Term_Work.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ADT/COVID_ADT/Corona_ADT.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ADT/COVID_ADT/Corona_ADT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ADT/COVID_ADT/test_CoronaADT.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ADT/COVID_ADT/test_CoronaADT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ADT/FLU_ADT/FluADT.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ADT/FLU_ADT/FluADT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ADT/FLU_ADT/test_ScrapADT.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ADT/FLU_ADT/test_ScrapADT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/MAIN/user_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/MAIN/user_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/SIDE_MODULES/API_usage/get_country_date_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/SIDE_MODULES/API_usage/get_country_date_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/SIDE_MODULES/API_usage/get_country_history_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/SIDE_MODULES/API_usage/get_country_history_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/SIDE_MODULES/Prediction/test_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/SIDE_MODULES/Prediction/test_prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/SIDE_MODULES/Prediction/value_time_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/SIDE_MODULES/Prediction/value_time_prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/SIDE_MODULES/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/SIDE_MODULES/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/SIDE_MODULES/get_infected_countries.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/SIDE_MODULES/get_infected_countries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/cases_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/cases_1.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="RunManager">
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZuDfZzdlRJ48rAcgD4BlsFQhDT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+  </component>
+  <component name="RunManager" selected="Python.Corona_ADT">
+    <configuration name="Corona_ADT" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="Term_Work" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Modules/ADT/COVID_ADT" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modules/ADT/COVID_ADT/Corona_ADT.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python" singleton="false">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -26,14 +70,95 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="user_interface" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="Term_Work" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Modules/MAIN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modules/MAIN/user_interface.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Corona_ADT" />
+        <item itemvalue="Python.user_interface" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc5b03e8-7c2b-449c-bf82-7389de5968a8" name="Default Changelist" comment="" />
+      <created>1589888785619</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589888785619</updated>
+      <workItem from="1589888787525" duration="3764000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="341" y="225" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1589889990330">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="341" y="225" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589889990330" />
+    <state x="505" y="396" key="#com.intellij.tools.ToolEditorDialog" timestamp="1589890170251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="505" y="396" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589890170251" />
+    <state x="341" y="275" key="FileChooserDialogImpl" timestamp="1589889983141">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="341" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589889983141" />
+    <state width="993" height="41" key="GridCell.Tab.0.bottom" timestamp="1589890654020">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="993" height="41" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589890654020" />
+    <state width="993" height="41" key="GridCell.Tab.0.center" timestamp="1589890654020">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="993" height="41" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589890654020" />
+    <state width="993" height="41" key="GridCell.Tab.0.left" timestamp="1589890654019">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="993" height="41" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589890654019" />
+    <state width="993" height="41" key="GridCell.Tab.0.right" timestamp="1589890654020">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="993" height="41" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589890654020" />
+    <state x="0" y="168" key="SettingsEditor" timestamp="1589890171139">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589890171139" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1589889752822">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589889752822" />
   </component>
 </project>

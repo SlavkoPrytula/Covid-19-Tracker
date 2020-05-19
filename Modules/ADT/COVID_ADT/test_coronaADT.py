@@ -10,9 +10,11 @@ class TestCoronaADT(unittest.TestCase):
     def test_APIs(self):
         # test all the APIs:
         self.assertIsInstance(self.corona.get_affected_countries(), dict)
-        self.assertIsInstance(self.corona.get_history_by_particular_country(self.country), dict)
+        self.assertIsInstance(self.corona.get_history_by_particular_country(
+            self.country), dict)
         self.assertIsInstance(self.corona.get_cases_by_land(), dict)
-        self.assertIsInstance(self.corona.get_latest_stat_by_country_name(self.country), dict)
+        self.assertIsInstance(self.corona.get_latest_stat_by_country_name(
+            self.country), dict)
         self.assertIsInstance(self.corona.get_world_total_stat(), dict)
 
     def test_all_cases(self):

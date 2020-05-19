@@ -449,10 +449,12 @@ def compute_similarity(virus_c, virus_f, mark=None):
         av_deaths_c = get_prediction(p)
 
     av_cases_f = virus_f.get_avr_illnesses()
-    cases_p = round((av_cases_f - av_cases_c) * 100 / av_cases_c, 3)
+    cases_p = round((av_cases_f - av_cases_c) * 100 / av_cases_c,
+                    3)
 
     av_recovers_f = virus_f.get_avr_recovered()
-    recovers_p = round((av_recovers_f - av_recovers_c) * 100 / av_recovers_c, 3)
+    recovers_p = round((av_recovers_f - av_recovers_c) * 100 / av_recovers_c,
+                       3)
 
     av_deaths_f = virus_f.get_avr_deaths()
     deaths_p = round((av_deaths_c - av_deaths_f) * 100 / av_deaths_c, 3)

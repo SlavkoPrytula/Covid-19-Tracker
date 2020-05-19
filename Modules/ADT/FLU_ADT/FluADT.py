@@ -6,7 +6,7 @@ class FluADT:
     """
     A class that contains flu statistics for a specific years
     """
-    def __init__(self, path = None):
+    def __init__(self, path=None):
         if path is not None:
             self.data = self.get_data_file(path)
         else:
@@ -52,8 +52,7 @@ class FluADT:
         :param year: year about which function will return information
         :return: number of recovered in specific year
         """
-        return self.get_total_symptoms(year) - \
-               self.get_total_Deaths(year)
+        return self.get_total_symptoms(year) - self.get_total_Deaths(year)
 
     def get_total_MedVisits(self, year):
         """
@@ -81,7 +80,8 @@ class FluADT:
 
     def get_avr_illnesses(self):
         """
-        The function calculates average number of illnesses in 2010-2016 flu seasons
+        The function calculates average number
+        of illnesses in 2010-2016 flu seasons
         :return: average number of illnesses in 2010-2016 flu seasons
         """
         rez = 0
@@ -93,7 +93,8 @@ class FluADT:
 
     def get_avr_deaths(self):
         """
-        The function calculates average number of deaths in 2010-2016 flu seasons
+        The function calculates average
+        number of deaths in 2010-2016 flu seasons
         :return: average number of deaths in 2010-2016 flu seasons
         """
         rez = 0
@@ -105,7 +106,8 @@ class FluADT:
 
     def get_avr_recovered(self):
         """
-        The function calculates average number of recovered in 2010-2016 flu seasons
+        The function calculates average
+        number of recovered in 2010-2016 flu seasons
         :return: average number of recovered in 2010-2016 flu seasons
         """
         rez = 0
@@ -135,8 +137,10 @@ class FluADT:
         """
         for year in self.data:
             print()
-            print(f'                      ______________{year}_____________')
-            t = PrettyTable(['Age group', 'Symptomatic Illnesses', 'Medical Visits',
+            print(f'                      '
+                  f'______________{year}_____________')
+            t = PrettyTable(['Age group', 'Symptomatic Illnesses',
+                             'Medical Visits',
                              'Hospitalizations', 'Deaths'])
             for age in [1, 19, 50, 100]:
                 row = self.get_statistic_year_age(year, age).to_list()

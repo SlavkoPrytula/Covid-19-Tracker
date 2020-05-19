@@ -16,4 +16,5 @@ if __name__ == '__main__':
     for i in range(len(number_days[1])):
         pred = p.prediction(new_dates, data[1], [dates_to_predict[i]])
         av_prediction_score = p.pred_score
-    print("Average prediction score = {}%".format(round(av_prediction_score * 100, 3)))
+    print("Average prediction score = {}%".format(
+        round(av_prediction_score * 100, 3)))

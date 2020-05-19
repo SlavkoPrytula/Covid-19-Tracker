@@ -1,7 +1,8 @@
 from Modules.ADT.FLU_ADT.ScrapADT import ScrapADT
 
 # Create ScrapADT object
-ScrapADTObject = ScrapADT('https://www.cdc.gov/flu/about/burden/2010-2011.html')
+ScrapADTObject = ScrapADT('https://www.cdc.gov'
+                          '/flu/about/burden/2010-2011.html')
 
 # Draw ScrapADTObject
 ScrapADTObject.draw()

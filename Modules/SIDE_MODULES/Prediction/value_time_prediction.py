@@ -11,8 +11,8 @@ class Prediction:
     def __init__(self, gamma, c, country, indicator="total_cases"):
         """
         Define parameters
-
-        :param gamma: defines how far the influence of a single training example reaches
+        :param gamma: defines how far the influence of a
+        single training example reaches
         """
 
         self.country = country
@@ -67,7 +67,9 @@ class Prediction:
 
         data = self.chop_data()
         dates = [date for date in data]
-        str_dates = ["{}-{}-{}".format(str(item)[:4], str(item)[4:6], str(item)[6:]) for item in data][::-1]
+        str_dates = ["{}-{}-{}".format(
+            str(item)[:4], str(item)[4:6],
+            str(item)[6:]) for item in data][::-1]
         dates = dates[::-1]
         items = []
 
@@ -109,7 +111,8 @@ class Prediction:
         dates_str = []
         for d in range(delta.days + 1):
             dates_str.append((day_0 + timedelta(days=d)).__str__())
-            dates_int.append([int((day_0 + timedelta(days=d)).__str__().replace("-", ""))])
+            dates_int.append(
+                [int((day_0 + timedelta(days=d)).__str__().replace("-", ""))])
 
         return dates_str, dates_int, delta.days
 
@@ -166,9 +169,9 @@ class Prediction:
 
         # get the values to be shown on the grid's axis:
         ox = [str_dates[0]]
-        for item in (sorted(list(set(i for i in str_dates
-                                     if i[-2] == "0" and i[-1] == "1"
-                                     or i[-2] == "1" and i[-1] == "5")))):
+        for item in (sorted(list(set(
+                i for i in str_dates if (i[-2] == "0" and i[-1] == "1") or
+                                        (i[-2] == "1" and i[-1] == "5"))))):
             ox.append(item)
         arr_y = np.arange(min(values), max(values) + 1, max(values) / 10)
         oy = np.append(arr_y, [])
@@ -181,7 +184,8 @@ class Prediction:
         plt.gcf().autofmt_xdate()
 
         # draw the new data points:
-        plt.scatter(dates, prediction, edgecolors="orange", label="predicted data")
+        plt.scatter(dates, prediction,
+                    edgecolors="orange", label="predicted data")
         plt.plot(dates, prediction)
         plt.xlabel("Date", fontsize=13)
         plt.ylabel("Cases", fontsize=13)

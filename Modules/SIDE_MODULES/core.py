@@ -24,7 +24,8 @@ def virus_interface(countries):
         line = ""
         for country in range(item, len(countries), number_of_rows):
             line += str(country + 1) + ". " + countries[country] \
-                    + " " * (25 - len(countries[country]) - len(str(country + 1)))
+                    + " " * (25 - len(countries[country]) - len(str(
+                     country + 1)))
         print(line)
     # print(countries)
 
@@ -51,15 +52,19 @@ def data(country):
     New data roughly every 10 minutes
     """
 
-    url = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_particular_country.php"
+    url = "https://coronavirus-monitor.p.rapidapi.com" \
+          "/coronavirus/cases_by_particular_country.php"
 
     querystring = {"country": country}
     headers = {
         'x-rapidapi-host': "coronavirus-monitor.p.rapidapi.com",
-        'x-rapidapi-key': "f34e347e05msha354cec5624fc49p1739cajsn490b038d2abc"
+        'x-rapidapi-key': "f34e347e05msha354"
+                          "cec5624fc49p1739cajsn490b038d2abc"
     }
 
-    response = requests.request("GET", url, headers=headers, params=querystring)
+    response = requests.request("GET", url,
+                                headers=headers,
+                                params=querystring)
     return response.json()
 
 
@@ -79,9 +84,9 @@ def write_country_data(country_d):
     with a name "country_virus.json"
     country = country's name
     """
-
     country = country_d["country"]
-    with open("{}_virus.json".format(country), "w", encoding='utf-8') as outfile:
+    with open("{}_virus.json".format(country), "w",
+              encoding='utf-8') as outfile:
         json.dump(country_d, outfile, ensure_ascii=False, indent=4)
 
 
@@ -99,12 +104,14 @@ def extract_var(json_file):
         # get data for each day:
         if data_line["record_date"][:10] not in cases_mean:
             cases_mean.update({data_line["record_date"][:10]:
-                               [int(data_line["total_cases"].replace(",", ""))]})
+                               [int(data_line["total_cases"].replace(
+                                   ",", ""))]})
         else:
             cases_mean[data_line["record_date"][:10]].append(
                 int(data_line["total_cases"].replace(",", "")))
         case_data = data_line.pop("total_cases")
-        # round the numbers for better appearance (!!!!!note: causes slight defection in numbers):
+        # round the numbers for better appearance (
+        # !!!!!note: causes slight defection in numbers):
         # total_cases_data.append(math.ceil(int(case_data.replace(",", "")) /
         #                                   10 ** (len(case_data) - 4)) *
         #                         10 ** (len(case_data) - 4))
@@ -131,7 +138,8 @@ def plot_var(plot_data):
     y_mean = plot_data[2]
     x_av = sorted(list(set(plot_data[0])))
 
-    # ??? (which is more accurate: the mean value or the middle value in teh list or last number)
+    # ??? (which is more accurate: the mean value or
+    # the middle value in teh list or last number)
     y_av = [y_mean[date][-1] for date in y_mean]
     y_down_av = [y_mean[date][1] for date in y_mean]
     # y_av = [sum(y_mean[date]) // len(y_mean[date]) for date in y_mean]

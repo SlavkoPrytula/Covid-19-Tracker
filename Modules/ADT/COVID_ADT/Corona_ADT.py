@@ -9,7 +9,8 @@ class CoronaADT:
         """
 
         self.host = "coronavirus-monitor.p.rapidapi.com"
-        self.api = "f34e347e05msha354cec5624fc49p1739cajsn490b038d2abc"
+        self.api = "f34e347e05msha354cec5624fc49p1739" \
+                   "cajsn490b038d2abc"
 
         self.country = country
 
@@ -19,7 +20,8 @@ class CoronaADT:
         were diagnosed.
         """
 
-        url = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/affected.php"
+        url = "https://coronavirus-monitor.p." \
+              "rapidapi.com/coronavirus/affected.php"
 
         headers = {
             'x-rapidapi-host': self.host,
@@ -35,7 +37,8 @@ class CoronaADT:
         :return:
         """
 
-        url = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_particular_country.php"
+        url = "https://coronavirus-monitor.p.rapidapi.com" \
+              "/coronavirus/cases_by_particular_country.php"
 
         querystring = {"country": country}
 
@@ -43,10 +46,12 @@ class CoronaADT:
             'x-rapidapi-host': self.host,
             'x-rapidapi-key': self.api
         }
-        response = requests.request("GET", url, headers=headers, params=querystring)
+        response = requests.request("GET", url,
+                                    headers=headers, params=querystring)
         return response.json()
 
-    def get_history_by_particular_country_by_date(self, county: str, date: str):
+    def get_history_by_particular_country_by_date(self,
+                                                  county: str, date: str):
         """
         Get cases history by the specific country and date
         :param county: str
@@ -54,7 +59,8 @@ class CoronaADT:
         :return:
         """
 
-        url = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/history_by_particular_country_by_date.php"
+        url = "https://coronavirus-monitor.p.rapidapi.com" \
+              "/coronavirus/history_by_particular_country_by_date.php"
 
         querystring = {"country": county, "date": date}
 
@@ -62,7 +68,9 @@ class CoronaADT:
             'x-rapidapi-host': self.host,
             'x-rapidapi-key': self.api
         }
-        response = requests.request("GET", url, headers=headers, params=querystring)
+        response = requests.request("GET", url,
+                                    headers=headers,
+                                    params=querystring)
         return response.json()
 
     def get_cases_by_land(self):
@@ -71,7 +79,8 @@ class CoronaADT:
         :return:
         """
 
-        url = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.php"
+        url = "https://coronavirus-monitor.p.rapidapi.com" \
+              "/coronavirus/cases_by_country.php"
 
         headers = {
             'x-rapidapi-host': self.host,
@@ -87,7 +96,8 @@ class CoronaADT:
         :return:
         """
 
-        url = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/johns_hopkins_latest_usa_statistic_by_state.php"
+        url = "https://coronavirus-monitor.p.rapidapi.com/coronavirus" \
+              "/johns_hopkins_latest_usa_statistic_by_state.php"
 
         querystring = {"state": state}
 
@@ -95,7 +105,9 @@ class CoronaADT:
             'x-rapidapi-host': self.host,
             'x-rapidapi-key': self.api
         }
-        response = requests.request("GET", url, headers=headers, params=querystring)
+        response = requests.request("GET",
+                                    url, headers=headers,
+                                    params=querystring)
         return response.json()
 
     def get_latest_stat_by_country_name(self, name: str):
@@ -105,7 +117,8 @@ class CoronaADT:
         :return:
         """
 
-        url = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/latest_stat_by_country.php"
+        url = "https://coronavirus-monitor.p.rapidapi.com" \
+              "/coronavirus/latest_stat_by_country.php"
 
         querystring = {"country": name}
 
@@ -113,7 +126,9 @@ class CoronaADT:
             'x-rapidapi-host': self.host,
             'x-rapidapi-key': self.api
         }
-        response = requests.request("GET", url, headers=headers, params=querystring)
+        response = requests.request("GET",
+                                    url, headers=headers,
+                                    params=querystring)
         return response.json()
 
     def get_world_total_stat(self):
@@ -122,7 +137,8 @@ class CoronaADT:
         :return:
         """
 
-        url = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php"
+        url = "https://coronavirus-monitor.p.rapidapi.com" \
+              "/coronavirus/worldstat.php"
 
         headers = {
             'x-rapidapi-host': self.host,
@@ -144,12 +160,13 @@ class CoronaADT:
 
     def get_infected(self):
         """
-        Get all the infected people form the begining of pandemic
+        Get all the infected people form the
+        beginning of pandemic
         :return:
         """
 
-        data = self.get_history_by_particular_country \
-            (self.country)["stat_by_country"][0]["total_cases"]
+        data = self.get_history_by_particular_country(
+            self.country)["stat_by_country"][0]["total_cases"]
         try:
             data = int(data.replace(",", ""))
         except ValueError:
@@ -158,12 +175,12 @@ class CoronaADT:
 
     def get_recovered(self):
         """
-        Get all the recoverd people form the begining of pandemic
+        Get all the recoverd people form the beginning of pandemic
         :return:
         """
 
-        data = self.get_history_by_particular_country \
-            (self.country)["stat_by_country"][0]["total_recovered"]
+        data = self.get_history_by_particular_country(
+            self.country)["stat_by_country"][0]["total_recovered"]
         try:
             data = int(data.replace(",", ""))
         except ValueError:
@@ -173,12 +190,13 @@ class CoronaADT:
 
     def get_deaths(self):
         """
-        Get all people who have died form the begining of pandemic
-        :return:
+        Get all people who have died form the
+        beginning of pandemic
+        :return: dict
         """
 
-        data = self.get_history_by_particular_country \
-            (self.country)["stat_by_country"][0]["total_deaths"]
+        data = self.get_history_by_particular_country(
+            self.country)["stat_by_country"][0]["total_deaths"]
         try:
             data = int(data.replace(",", ""))
         except ValueError:
@@ -191,8 +209,8 @@ class CoronaADT:
         :return:
         """
 
-        data = self.get_history_by_particular_country \
-            (self.country)["stat_by_country"][0]["new_cases"]
+        data = self.get_history_by_particular_country(
+            self.country)["stat_by_country"][0]["new_cases"]
         try:
             data = int(data.replace(",", ""))
         except ValueError:
@@ -205,8 +223,8 @@ class CoronaADT:
         :return:
         """
 
-        data = self.get_history_by_particular_country \
-            (self.country)["stat_by_country"][0]["active_cases"]
+        data = self.get_history_by_particular_country(
+            self.country)["stat_by_country"][0]["active_cases"]
         try:
             data = int(data.replace(",", ""))
         except ValueError:
@@ -219,8 +237,8 @@ class CoronaADT:
         :return:
         """
 
-        data = self.get_history_by_particular_country \
-            (self.country)["stat_by_country"][0]["new_deaths"]
+        data = self.get_history_by_particular_country(
+            self.country)["stat_by_country"][0]["new_deaths"]
         try:
             data = int(data.replace(",", ""))
         except ValueError:
@@ -233,8 +251,8 @@ class CoronaADT:
         :return:
         """
 
-        data = self.get_history_by_particular_country \
-            (self.country)["stat_by_country"][0]["serious_critical"]
+        data = self.get_history_by_particular_country(
+            self.country)["stat_by_country"][0]["serious_critical"]
         try:
             data = int(data.replace(",", ""))
         except ValueError:
@@ -248,8 +266,8 @@ class CoronaADT:
         :return:
         """
 
-        data = self.get_history_by_particular_country \
-            (self.country)["stat_by_country"][0]["total_cases_per1m"]
+        data = self.get_history_by_particular_country(
+            self.country)["stat_by_country"][0]["total_cases_per1m"]
         try:
             data = int(data.replace(",", ""))
         except ValueError:
@@ -262,8 +280,8 @@ class CoronaADT:
         :return:
         """
 
-        data = self.get_history_by_particular_country \
-            (self.country)["stat_by_country"][0]["record_date"]
+        data = self.get_history_by_particular_country(
+            self.country)["stat_by_country"][0]["record_date"]
         return data
 
     def history_by_date(self, country, date):
@@ -274,7 +292,8 @@ class CoronaADT:
         :return:
         """
 
-        data = self.get_history_by_particular_country_by_date(country, date)["stat_by_country"]
+        data = self.get_history_by_particular_country_by_date(
+            country, date)["stat_by_country"]
         return "Infected: {}\n" \
                "Recovered: {}\n" \
                "Deaths: {}".format(data[0]["total_cases"],
