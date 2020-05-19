@@ -40,7 +40,7 @@ Now you can chose what statistics you want to see _by typing in the command numb
 
 ![Example_2](https://github.com/SlavkoPrytula/Covid-19-Tracker/blob/master/Photos/Screenshot_20200519_153130.png)
 
-It can also provede you plotted statistics on the bar charts.
+It can also provide you with plotted statistics on the bar charts.
 
 
 ![Predicted number of cases for COVID-19 up till 2021](https://github.com/SlavkoPrytula/Covid-19-Tracker/blob/master/Photos/cases_prediction.png)
@@ -84,4 +84,4 @@ It is available in the repository for view and read - see the [LICENSE.md](https
 
 ## Acknowledgments
 
-* _Special thanks to Ukrainian Catholic University for giving the opportunity to make the project become a reality. For all the provided help and tips_
+* _Special thanks to [Ukrainian Catholic University](https://apps.ucu.edu.ua/en/) for giving the opportunity to make the project become a reality. For all the provided help and tips_
