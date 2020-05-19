@@ -22,13 +22,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Photos" />
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\38097\Documents\UCU\1yr_2sm_lab\Covid-19-Tracker" />
       <recent name="C:\Users\38097\Documents\UCU\1yr_2sm_lab\Covid-19-Tracker\Photos" />
+      <recent name="C:\Users\38097\Documents\UCU\1yr_2sm_lab\Covid-19-Tracker" />
     </key>
   </component>
   <component name="RunManager" selected="Python.user_interface">
@@ -36,6 +36,9 @@
       <module name="Term_Work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Modules/ADT/COVID_ADT" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -109,7 +112,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589888785619</updated>
-      <workItem from="1589888787525" duration="9106000" />
+      <workItem from="1589888787525" duration="9869000" />
+      <workItem from="1589913538473" duration="3487000" />
     </task>
     <task id="LOCAL-00001" summary="PEP8 updated">
       <created>1589892769437</created>
@@ -132,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589897662943</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="upload diagrams">
+      <created>1589900824501</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589900824501</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +153,8 @@
     <MESSAGE value="PEP8 updated" />
     <MESSAGE value="added photos" />
     <MESSAGE value="upload distributive" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload distributive" />
+    <MESSAGE value="upload diagrams" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload diagrams" />
   </component>
   <component name="WindowStateProjectService">
     <state x="191" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589897604986">
@@ -157,38 +169,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="505" y="396" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589890170251" />
-    <state x="145" y="103" key="CommitChangelistDialog2" timestamp="1589897662439">
+    <state x="145" y="103" key="CommitChangelistDialog2" timestamp="1589900824092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="145" y="103" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589897662439" />
+    <state x="145" y="103" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589900824092" />
     <state x="341" y="275" key="FileChooserDialogImpl" timestamp="1589889983141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="341" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589889983141" />
-    <state width="993" height="41" key="GridCell.Tab.0.bottom" timestamp="1589890654020">
+    <state width="993" height="41" key="GridCell.Tab.0.bottom" timestamp="1589909427292">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="993" height="41" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589890654020" />
-    <state width="993" height="41" key="GridCell.Tab.0.center" timestamp="1589890654020">
+    <state width="993" height="41" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589909427292" />
+    <state width="993" height="41" key="GridCell.Tab.0.center" timestamp="1589909427291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="993" height="41" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589890654020" />
-    <state width="993" height="41" key="GridCell.Tab.0.left" timestamp="1589890654019">
+    <state width="993" height="41" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589909427291" />
+    <state width="993" height="41" key="GridCell.Tab.0.left" timestamp="1589909427291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="993" height="41" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589890654019" />
-    <state width="993" height="41" key="GridCell.Tab.0.right" timestamp="1589890654020">
+    <state width="993" height="41" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589909427291" />
+    <state width="993" height="41" key="GridCell.Tab.0.right" timestamp="1589909427291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="993" height="41" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589890654020" />
+    <state width="993" height="41" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589909427291" />
     <state x="0" y="168" key="SettingsEditor" timestamp="1589890171139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589890171139" />
-    <state x="132" y="256" key="Vcs.Push.Dialog.v2" timestamp="1589897704583">
+    <state x="132" y="256" key="Vcs.Push.Dialog.v2" timestamp="1589900897692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="132" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589897704583" />
+    <state x="132" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589900897692" />
     <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1589889752822">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
