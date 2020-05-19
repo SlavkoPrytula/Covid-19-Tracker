@@ -1,7 +1,7 @@
-from Modules.MAIN.Prediction.value_time_prediction import Prediction
+from Modules.SIDE_MODULES.Prediction.value_time_prediction import Prediction
 
 if __name__ == '__main__':
-    p = Prediction(0.00001, "USA")
+    p = Prediction(0.00001, 4000000, "USA", "total_cases")
 
     # get the proceeded data:
     data = p.define_numpy()
