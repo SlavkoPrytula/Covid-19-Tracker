@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc5b03e8-7c2b-449c-bf82-7389de5968a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/ADT/COVID_ADT/test_CoronaADT.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ADT/COVID_ADT/test_CoronaADT.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,6 +32,10 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\38097\Documents\UCU\1yr_2sm_lab\Covid-19-Tracker\Modules" />
+      <recent name="C:\Users\38097\Documents\UCU\1yr_2sm_lab\Covid-19-Tracker" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\38097\Documents\UCU\1yr_2sm_lab\Covid-19-Tracker\Photos" />
       <recent name="C:\Users\38097\Documents\UCU\1yr_2sm_lab\Covid-19-Tracker" />
@@ -113,7 +123,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589888785619</updated>
       <workItem from="1589888787525" duration="9869000" />
-      <workItem from="1589913538473" duration="3487000" />
+      <workItem from="1589913538473" duration="4022000" />
     </task>
     <task id="LOCAL-00001" summary="PEP8 updated">
       <created>1589892769437</created>
@@ -143,7 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589900824501</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="last commit">
+      <created>1589917126993</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589917126993</updated>
+    </task>
+    <task id="LOCAL-00006" summary="upload docs">
+      <created>1589917218869</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589917218869</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +178,9 @@
     <MESSAGE value="added photos" />
     <MESSAGE value="upload distributive" />
     <MESSAGE value="upload diagrams" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload diagrams" />
+    <MESSAGE value="last commit" />
+    <MESSAGE value="upload docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload docs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="191" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589897604986">
@@ -169,10 +195,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="505" y="396" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589890170251" />
-    <state x="145" y="103" key="CommitChangelistDialog2" timestamp="1589900824092">
+    <state x="145" y="103" key="CommitChangelistDialog2" timestamp="1589917218415">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="145" y="103" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589900824092" />
+    <state x="145" y="103" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589917218415" />
     <state x="341" y="275" key="FileChooserDialogImpl" timestamp="1589889983141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -197,10 +223,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589890171139" />
-    <state x="132" y="256" key="Vcs.Push.Dialog.v2" timestamp="1589900897692">
+    <state x="132" y="256" key="Vcs.Push.Dialog.v2" timestamp="1589917259068">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="132" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589900897692" />
+    <state x="132" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589917259068" />
     <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1589889752822">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
