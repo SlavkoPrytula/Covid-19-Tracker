@@ -56,12 +56,13 @@ It can also provede you plotted statistics on the bar charts.
 
 Here you will find the necessary tests for the program usage. They [modules] show how to work and integrate with the code correctly.
 * **Modules**
-[test_CoronaADT.py](https://github.com/SlavkoPrytula/Covid-19-Tracker/blob/master/Modules/ADT/COVID_ADT/test_CoronaADT.py)
-[test_coronaADT.py](https://github.com/SlavkoPrytula/Covid-19-Tracker/blob/master/Modules/ADT/COVID_ADT/test_coronaADT.py)
-[test_FluADT.py](https://github.com/SlavkoPrytula/Covid-19-Tracker/blob/master/Modules/ADT/FLU_ADT/test_FluADT.py)
-[test_ScrapADT.py](https://github.com/SlavkoPrytula/Covid-19-Tracker/blob/master/Modules/ADT/FLU_ADT/test_ScrapADT.py)
-[test_prediction.py](https://github.com/SlavkoPrytula/Covid-19-Tracker/blob/master/Modules/SIDE_MODULES/Prediction/test_prediction.py)
-[API_usages](https://github.com/SlavkoPrytula/Covid-19-Tracker/tree/master/Modules/SIDE_MODULES/API_usage)
+* [test_CoronaADT.py](https://github.com/SlavkoPrytula/Covid-19-Tracker/blob/master/Modules/ADT/COVID_ADT/test_CoronaADT.py)
+* [test_coronaADT.py](https://github.com/SlavkoPrytula/Covid-19-Tracker/blob/master/Modules/ADT/COVID_ADT/test_coronaADT.py)
+* [test_FluADT.py](https://github.com/SlavkoPrytula/Covid-19-Tracker/blob/master/Modules/ADT/FLU_ADT/test_FluADT.py)
+* [test_ScrapADT.py](https://github.com/SlavkoPrytula/Covid-19-Tracker/blob/master/Modules/ADT/FLU_ADT/test_ScrapADT.py)
+* [test_prediction.py](https://github.com/SlavkoPrytula/Covid-19-Tracker/blob/master/Modules/SIDE_MODULES/Prediction/test_prediction.py)
+* [API_usages](https://github.com/SlavkoPrytula/Covid-19-Tracker/tree/master/Modules/SIDE_MODULES/API_usage)
+
 ## Built With
 
 * [Python](https://www.python.org/download/releases/3.0/)
